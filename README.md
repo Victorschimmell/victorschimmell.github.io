@@ -44,7 +44,7 @@ Ensure you have the following installed:
   npm run dev
   ```
 
-##🛠️ Testing & Development Workflow
+## 🛠️ Testing & Development Workflow
 - **Database Migrations:** Use Prisma to handle schema migrations.
 - **API Testing:** Leverage tRPC’s built-in type-safety to streamline backend testing.
 - **Frontend Styling:** Utilize Tailwind's utility classes for a responsive UI.
