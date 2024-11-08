@@ -38,11 +38,9 @@ Ensure you have the following installed:
 3. **Set Up Environment Variables**
   Duplicate the .env.example file and rename it to .env. Update the environment variables as needed.
 4. **Run the application**
-  Start the docker container:
+  Start the docker container and launch the development server:
   ```bash
   docker-compose up -d
-  ```Launch the development server:
-  ```bash
   npm run dev
   ```
 
