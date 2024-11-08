@@ -1,25 +1,7 @@
-# Running the application
+# The project
+## Project Description
+The project is about .....
+I use Next.ja, TypeScript, Tailwind, tRPC, Prisma Postgres and Docker.
 
-## The database
-
-Do:
-
-```bash
-docker pull postgres
-docker run --name db -e POSTGRES_USER=user -e POSTGRES_PASSWORD=password -p 5432:5432 -d postgres
-```
-
-To run the studio, do:
-
-```bash
-npx prisma introspect # Probably not necessary
-npx prisma studio
-```
-
-## The application
-
-Do:
-
-```bash
-docker run -d -p 3000:3000 --name prod-container victorschimmell.github.io
-```
+## Project Approach
+For this project, I use the bottom-up approach, starting from the database, proceed to creating and testing the backend and then create the frontend.

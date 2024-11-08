@@ -1,36 +1,17 @@
+version: '3.9'
+
 services:
-  nextjs:
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
-    volumes:
-      - /app/node_modules
-      - .:/app
-    ports:
-      - "80:3000"
-    environment:
-      - NODE_ENV=development
-      
   db:
-    image: postgres:latest
-    environment:
-      POSTGRES_DB:mydatabase
-      POSTGRES_USER:user
-      POSTGRES_PASSWORD:password
+    container_name: db
+    image: postgres:12
     ports:
       - "5432:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-
-  pgadmin:
-    image: dpage/pgadmin4:latest
     environment:
-      PGADMIN_DEFAULT_EMAIL: "admin@admin.com"
-      PGADMIN_DEFAULT_PASSWORD: "admin"
-    ports:
-      - "5050:80"
-    depends_on:
-      - db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    volumes:
+      - pgdata:/var/lib/postgresql/data
 
 volumes:
-  postgres_data:
+  pgdata: {}
