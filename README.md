@@ -41,8 +41,7 @@ Ensure you have the following installed:
   Start the docker container:
   ```bash
   docker-compose up -d
-  ```
-  Launch the development server:
+  ```Launch the development server:
   ```bash
   npm run dev
   ```
