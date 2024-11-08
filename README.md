@@ -32,7 +32,6 @@ Ensure you have the following installed:
    ```
 2. **Install Dependencies**
    ```bash
-   cd user-management
    npm install
    ```
 3. **Set Up Environment Variables**
